@@ -40,8 +40,11 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 rounded-xl h-11">
-          Get Started
+        <Button
+          asChild
+          className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 rounded-xl h-11"
+        >
+          <a href="/#contact-form">Get Started</a>
         </Button>
 
         <button className="lg:hidden text-foreground p-2" onClick={() => setIsOpen(!isOpen)}>
@@ -61,7 +64,11 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button className="w-full bg-primary text-primary-foreground font-bold h-12 rounded-xl">Get Started</Button>
+          <Button asChild className="w-full bg-primary text-primary-foreground font-bold h-12 rounded-xl">
+            <a href="/#contact-form" onClick={() => setIsOpen(false)}>
+              Get Started
+            </a>
+          </Button>
         </div>
       )}
     </nav>

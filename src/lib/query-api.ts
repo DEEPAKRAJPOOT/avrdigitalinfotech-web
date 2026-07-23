@@ -1,9 +1,9 @@
 /**
- * Laravel contact queries API (public POST /api/queries).
- * @see project API docs — Accept & Content-Type: application/json
+ * Contact / enquiry API.
+ * Prefer BigRock PHP endpoint (VITE_CONTACT_API_URL), else Laravel base + /api/queries.
  */
 
-const DEFAULT_BASE = "https://360techportfolio.com/projects/laravel-app";
+const DEFAULT_LARAVEL_BASE = "https://360techportfolio.com/projects/laravel-app";
 
 export type ContactQueryPayload = {
   name: string;
@@ -23,13 +23,16 @@ type LaravelValidationBody = {
   errors?: Record<string, string[]>;
 };
 
-function getApiBase(): string {
-  const raw = import.meta.env.VITE_LARAVEL_API_BASE_URL ?? DEFAULT_BASE;
-  return raw.replace(/\/$/, "");
+function getContactEndpoint(): string {
+  const direct = import.meta.env.VITE_CONTACT_API_URL?.trim();
+  if (direct) return direct.replace(/\/$/, "");
+
+  const raw = import.meta.env.VITE_LARAVEL_API_BASE_URL ?? DEFAULT_LARAVEL_BASE;
+  return `${raw.replace(/\/$/, "")}/api/queries`;
 }
 
 export function getQueriesEndpoint(): string {
-  return `${getApiBase()}/api/queries`;
+  return getContactEndpoint();
 }
 
 export function parseLaravelValidationErrors(data: unknown): Record<string, string> {
@@ -44,7 +47,7 @@ export function parseLaravelValidationErrors(data: unknown): Record<string, stri
 }
 
 export async function submitContactQuery(payload: ContactQueryPayload): Promise<SubmitQuerySuccess> {
-  const res = await fetch(getQueriesEndpoint(), {
+  const res = await fetch(getContactEndpoint(), {
     method: "POST",
     headers: {
       Accept: "application/json",

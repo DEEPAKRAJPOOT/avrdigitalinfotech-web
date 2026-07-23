@@ -89,3 +89,100 @@
     background-size: 50px 50px;
   }
 }
+
+/* —— Hero animated background (outside layers so they always apply) —— */
+.hero-grid-animated {
+  background-image:
+    linear-gradient(hsl(220 90% 56% / 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(220 90% 56% / 0.12) 1px, transparent 1px);
+  background-size: 56px 56px;
+  animation: hero-grid-drift 22s linear infinite;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 40%, transparent 100%);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  will-change: transform, opacity;
+}
+
+.hero-orb-a {
+  top: 5%;
+  left: 50%;
+  width: min(90vw, 640px);
+  height: 380px;
+  margin-left: calc(min(90vw, 640px) / -2);
+  background: hsl(220 90% 56% / 0.45);
+  animation: hero-orb-pulse 7s ease-in-out infinite;
+}
+
+.hero-orb-b {
+  top: 35%;
+  left: -8%;
+  width: 340px;
+  height: 340px;
+  background: hsl(210 95% 60% / 0.35);
+  animation: hero-orb-float 9s ease-in-out infinite;
+}
+
+.hero-orb-c {
+  top: 20%;
+  right: -6%;
+  width: 300px;
+  height: 300px;
+  background: hsl(225 85% 55% / 0.32);
+  animation: hero-orb-float-alt 11s ease-in-out infinite;
+}
+
+.hero-scanline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    hsl(220 90% 70% / 0.12),
+    transparent
+  );
+  animation: hero-scan 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes hero-grid-drift {
+  from { background-position: 0 0; }
+  to { background-position: 56px 56px; }
+}
+
+@keyframes hero-orb-pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+@keyframes hero-orb-float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(40px, -50px, 0); }
+}
+
+@keyframes hero-orb-float-alt {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-36px, 40px, 0); }
+}
+
+@keyframes hero-scan {
+  0% { top: -10%; opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { top: 95%; opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid-animated,
+  .hero-orb-a,
+  .hero-orb-b,
+  .hero-orb-c,
+  .hero-scanline {
+    animation: none !important;
+  }
+}

@@ -88,9 +88,9 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out forwards",
-        "slide-up": "slide-up 0.6s ease-out forwards",
-        "float": "float 3s ease-in-out infinite",
+        "fade-in": "fade-in 0.7s ease-out both",
+        "slide-up": "slide-up 0.8s ease-out both",
+        "float": "float 3.5s ease-in-out infinite",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
