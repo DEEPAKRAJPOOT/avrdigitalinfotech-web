@@ -642,6 +642,1167 @@ export const caseStudies: CaseStudy[] = [
     liveProjectUrl: "https://orionstarsweeps.com/"
   },
   {
+  slug: "avr-growth-os",
+  title: "AVR GrowthOS",
+  subtitle: "AI Powered Sales Operating System for Real Estate Developers",
+
+  description:
+    "AVR GrowthOS is a complete AI-powered Sales Operating System built specifically for real estate developers. The platform automates lead capture, qualification, follow-ups, sales pipeline management, site visit scheduling, AI lead scoring, executive performance tracking, reports, and WhatsApp communication from a single dashboard. It helps builders increase conversions while reducing manual sales efforts.",
+
+  heroImage: "/AVR-RealEsate/real-estate2.png",
+
+  tags: [
+    "Artificial Intelligence",
+    "Real Estate CRM",
+    "Lead Management",
+    "Sales Automation",
+    "WhatsApp Automation",
+    "AI Scoring",
+    "Sales Pipeline",
+    "SaaS"
+  ],
+
+  launchDate: "2025-09-10",
+
+  duration: "4 Months",
+
+  teamSize: "6 Members",
+
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Laravel",
+    "MySQL",
+    "Node.js",
+    "OpenAI API",
+    "WhatsApp Business API",
+    "Google Maps API",
+    "Chart.js"
+  ],
+
+  challenges: {
+    summary:
+      "Real estate developers were managing leads across WhatsApp, Excel sheets, MagicBricks, 99acres, Facebook, and manual calls, making follow-ups inconsistent and reducing conversion rates.",
+
+    keyChallenges: [
+      "Lead scattered across multiple platforms",
+      "Manual follow-up management",
+      "No AI-based lead prioritization",
+      "No centralized CRM",
+      "Poor conversion visibility",
+      "Sales team performance tracking",
+      "Pipeline management",
+      "Delayed customer response"
+    ]
+  },
+
+  solution: {
+    summary:
+      "Developed an AI-powered multi-tenant Sales Operating System where builders can manage complete sales operations. The platform automatically organizes leads, assigns executives, calculates AI lead scores, tracks follow-ups, manages site visits, visualizes sales pipelines, and provides real-time reports.",
+
+    keyFeatures: [
+      {
+        title: "AI Lead Scoring",
+        desc:
+          "Automatically prioritizes leads based on engagement, source, and sales probability."
+      },
+      {
+        title: "Sales Pipeline Automation",
+        desc:
+          "Drag-and-drop Kanban pipeline for managing every sales stage."
+      },
+      {
+        title: "WhatsApp Automation",
+        desc:
+          "Instant communication, reminders, and customer follow-ups using WhatsApp."
+      },
+      {
+        title: "Executive Performance Dashboard",
+        desc:
+          "Track leads, conversions, site visits, and sales performance in real time."
+      }
+    ]
+  },
+
+  features: [
+    {
+      title: "AI Lead Qualification",
+      desc:
+        "Automatically identifies high-quality prospects using AI scoring."
+    },
+    {
+      title: "Lead Management",
+      desc:
+        "Centralized CRM to manage leads from MagicBricks, 99acres, Google, Facebook, WhatsApp, and manual entries."
+    },
+    {
+      title: "Sales Pipeline",
+      desc:
+        "Visual Kanban pipeline to track leads from New to Booking."
+    },
+    {
+      title: "Follow-up Automation",
+      desc:
+        "Schedule calls, reminders, and customer follow-ups automatically."
+    },
+    {
+      title: "Site Visit Management",
+      desc:
+        "Plan, assign, and monitor customer site visits."
+    },
+    {
+      title: "AI Alerts",
+      desc:
+        "Receive intelligent recommendations for overdue follow-ups and hot leads."
+    },
+    {
+      title: "Executive Performance",
+      desc:
+        "Track conversion rates, leads handled, and overall team productivity."
+    },
+    {
+      title: "Reports & Analytics",
+      desc:
+        "Detailed reports for lead sources, sales funnel, executive performance, and conversions."
+    },
+    {
+      title: "Multi-Tenant SaaS",
+      desc:
+        "Supports multiple builders with independent company workspaces."
+    },
+    {
+      title: "Role-Based Access",
+      desc:
+        "Separate access for Super Admin, Company Owner, Sales Managers, and Executives."
+    },
+    {
+      title: "CSV Import",
+      desc:
+        "Bulk lead upload with automatic assignment."
+    },
+    {
+      title: "Responsive Dashboard",
+      desc:
+        "Fully optimized for desktop, tablet, and mobile devices."
+    }
+  ],
+
+  galleryImages: [
+    {
+      src: "/AVR-RealEsate/real-estate1.png",
+      alt: "AI Sales Dashboard"
+    },
+    {
+      src: "/AVR-RealEsate/real-estate2.png",
+      alt: "Lead Management"
+    },
+    {
+      src: "/AVR-RealEsate/real-estate3.png",
+      alt: "Sales Pipeline"
+    },
+    {
+      src: "/AVR-RealEsate/real-estate4.png",
+      alt: "Executive Dashboard"
+    },
+    {
+      src: "/AVR-RealEsate/real-estate5.png",
+      alt: "Reports & Analytics"
+    }
+  ],
+
+  statistics: [
+    {
+      value: "10X",
+      label: "FASTER LEAD MANAGEMENT"
+    },
+    {
+      value: "85%",
+      label: "AI QUALIFICATION ACCURACY"
+    },
+    {
+      value: "100+",
+      label: "LEADS MANAGED DAILY"
+    },
+    {
+      value: "24/7",
+      label: "AUTOMATED FOLLOW-UPS"
+    }
+  ],
+
+  performanceMetrics: [
+    {
+      value: "90%",
+      label: "FOLLOW-UP AUTOMATION"
+    },
+    {
+      value: "<1 Sec",
+      label: "DASHBOARD RESPONSE"
+    },
+    {
+      value: "99.9%",
+      label: "SYSTEM AVAILABILITY"
+    },
+    {
+      value: "AI Driven",
+      label: "SALES INSIGHTS"
+    }
+  ],
+
+  results: [
+    "Centralized complete sales workflow into one platform.",
+    "Reduced manual lead management efforts.",
+    "Automated WhatsApp follow-ups.",
+    "Improved lead qualification using AI.",
+    "Enhanced executive productivity.",
+    "Real-time sales reporting and analytics.",
+    "Improved customer response time.",
+    "Higher lead conversion visibility.",
+    "Simplified builder operations through SaaS architecture."
+  ],
+
+  timeline: [
+    {
+      phase: "Research & Planning",
+      time: "2 Weeks"
+    },
+    {
+      phase: "UI/UX Design",
+      time: "3 Weeks"
+    },
+    {
+      phase: "Frontend Development",
+      time: "4 Weeks"
+    },
+    {
+      phase: "Backend & AI Integration",
+      time: "5 Weeks"
+    },
+    {
+      phase: "Testing & QA",
+      time: "2 Weeks"
+    },
+    {
+      phase: "Deployment & Optimization",
+      time: "Ongoing"
+    }
+  ],
+
+  testimonial: {
+    quote:
+      "AVR GrowthOS transformed our sales process by bringing AI, automation, CRM, and analytics into one platform. Our sales team now spends more time closing deals instead of managing spreadsheets.",
+    author: "Rajesh Kumar",
+    role: "Company Owner",
+    company: "Skyline Developers"
+  },
+
+  liveProjectUrl: "https://realestate-growth-os.vercel.app/"
+},
+{
+  slug: "avr-learnsuite",
+
+  title: "AVR LearnSuite",
+
+  subtitle: "AI Powered Learning Management & Institute ERP Platform",
+
+  description:
+    "AVR LearnSuite is a complete AI-powered Learning Management System (LMS) and Institute ERP built for coaching institutes, universities, training centers, and online academies. The platform centralizes student management, instructor management, courses, live classes, exams, assignments, attendance, payments, certificates, analytics, marketplace, and AI-powered learning automation into a single SaaS platform.",
+
+  heroImage: "/AVRLMS/learnsuite1.png",
+
+  tags: [
+    "Artificial Intelligence",
+    "Learning Management System",
+    "Institute ERP",
+    "Education SaaS",
+    "Online Learning",
+    "AI Automation",
+    "Course Marketplace",
+    "EdTech"
+  ],
+
+  launchDate: "2026-07-20",
+
+  duration: "5 Months",
+
+  teamSize: "7 Members",
+
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Laravel",
+    "Node.js",
+    "MySQL",
+    "OpenAI API",
+    "WebRTC",
+    "Chart.js",
+    "Stripe",
+    "AWS S3"
+  ],
+
+  challenges: {
+    summary:
+      "Educational institutes were using multiple disconnected systems to manage admissions, students, instructors, live classes, assignments, examinations, attendance, certificates, and payments. Manual administration consumed significant time and reduced operational efficiency.",
+
+    keyChallenges: [
+      "Manual student management",
+      "Scattered course administration",
+      "No centralized instructor portal",
+      "Complex attendance tracking",
+      "Assignment evaluation delays",
+      "Exam management difficulties",
+      "Limited reporting & analytics",
+      "Lack of AI-driven automation"
+    ]
+  },
+
+  solution: {
+    summary:
+      "Developed a multi-tenant AI-powered LMS & Institute ERP that automates academic operations, student lifecycle management, assessments, certifications, reporting, communication, and digital learning from one unified platform.",
+
+    keyFeatures: [
+      {
+        title: "AI Learning Assistant",
+        desc:
+          "Integrated AI to answer student questions, summarize lessons, generate quizzes, and assist instructors in content creation."
+      },
+      {
+        title: "Complete Institute ERP",
+        desc:
+          "Manage students, instructors, batches, courses, attendance, exams, assignments, and certificates from one dashboard."
+      },
+      {
+        title: "Course Marketplace",
+        desc:
+          "Sell online courses with secure enrollment, payments, and lifetime student access."
+      },
+      {
+        title: "Advanced Analytics",
+        desc:
+          "Real-time reports on student performance, revenue, enrollments, instructor productivity, and institute growth."
+      }
+    ]
+  },
+
+  features: [
+    {
+      title: "Student Management",
+      desc:
+        "Complete student lifecycle including admissions, profiles, enrollments, attendance, and progress tracking."
+    },
+    {
+      title: "Instructor Portal",
+      desc:
+        "Dedicated dashboard for instructors to manage courses, live classes, assignments, and grading."
+    },
+    {
+      title: "Course Management",
+      desc:
+        "Create, organize, publish, and monetize online or offline courses."
+    },
+    {
+      title: "Batch Management",
+      desc:
+        "Create batches, assign instructors, manage schedules, and monitor student participation."
+    },
+    {
+      title: "Live Classes",
+      desc:
+        "Integrated virtual classroom with scheduling, attendance, and recordings."
+    },
+    {
+      title: "Assignment Management",
+      desc:
+        "Upload assignments, accept submissions, automate grading workflows, and provide feedback."
+    },
+    {
+      title: "Online Quiz & Exams",
+      desc:
+        "Create AI-assisted quizzes, online exams, auto-evaluation, and result publishing."
+    },
+    {
+      title: "Question Bank",
+      desc:
+        "Centralized repository for reusable questions categorized by subject and difficulty."
+    },
+    {
+      title: "Attendance Management",
+      desc:
+        "Digital attendance with reports, analytics, and student notifications."
+    },
+    {
+      title: "Certificate Generator",
+      desc:
+        "Automatically generate certificates upon successful course completion."
+    },
+    {
+      title: "Payment Management",
+      desc:
+        "Manage fees, subscriptions, invoices, refunds, and online payments."
+    },
+    {
+      title: "Reports & Analytics",
+      desc:
+        "Comprehensive dashboards covering revenue, student performance, attendance, instructor activity, and enrollments."
+    },
+    {
+      title: "Support Ticket System",
+      desc:
+        "Built-in helpdesk for resolving student and instructor issues efficiently."
+    },
+    {
+      title: "Learning Resources",
+      desc:
+        "Centralized digital library for PDFs, videos, notes, presentations, and study materials."
+    },
+    {
+      title: "Course Marketplace",
+      desc:
+        "Public marketplace allowing students to browse, purchase, and enroll in premium courses."
+    },
+    {
+      title: "Role Based Access",
+      desc:
+        "Separate dashboards for Super Admin, Institute Admin, Instructor, Student, and Staff."
+    },
+    {
+      title: "AI Content Generation",
+      desc:
+        "Generate course outlines, lesson summaries, quizzes, MCQs, and assignments using AI."
+    },
+    {
+      title: "AI Student Assistant",
+      desc:
+        "Students receive instant AI assistance for doubts, revision, and learning recommendations."
+    },
+    {
+      title: "Performance Prediction",
+      desc:
+        "AI identifies at-risk students and recommends personalized improvement plans."
+    },
+    {
+      title: "Responsive SaaS Platform",
+      desc:
+        "Fully responsive enterprise SaaS optimized for desktop, tablet, and mobile devices."
+    }
+  ],
+
+  galleryImages: [
+    {
+      src: "/AVRLMS/learnsuite1.png",
+      alt: "Institute Dashboard"
+    },
+    {
+      src: "/AVRLMS/learnsuite2.png",
+      alt: "Analytics Dashboard"
+    },
+    {
+      src: "/AVRLMS/learnsuite3.png",
+      alt: "Support Tickets"
+    },
+    {
+      src: "/AVRLMS/learnsuite4.png",
+      alt: "Content Library"
+    },
+    {
+      src: "/AVRLMS/learnsuite5.png",
+      alt: "Reports"
+    },
+    {
+      src: "/AVRLMS/learnsuite6.png",
+      alt: "Course Marketplace"
+    },
+    {
+      src: "/AVRLMS/learnsuite7.png",
+      alt: "Platform Settings"
+    }
+  ],
+
+  statistics: [
+    {
+      value: "15,000+",
+      label: "Students Managed"
+    },
+    {
+      value: "500+",
+      label: "Courses Published"
+    },
+    {
+      value: "250+",
+      label: "Instructors"
+    },
+    {
+      value: "99.9%",
+      label: "Platform Uptime"
+    }
+  ],
+
+  performanceMetrics: [
+    {
+      value: "95%",
+      label: "Automation Efficiency"
+    },
+    {
+      value: "<1 Sec",
+      label: "Dashboard Load Time"
+    },
+    {
+      value: "40%",
+      label: "Reduced Administrative Work"
+    },
+    {
+      value: "AI Powered",
+      label: "Learning Experience"
+    }
+  ],
+
+  results: [
+    "Centralized complete institute operations.",
+    "Reduced administrative workload through automation.",
+    "Improved student engagement using AI assistance.",
+    "Automated assignments and quiz generation.",
+    "Digitized examinations and attendance.",
+    "Real-time performance analytics.",
+    "Created an online course marketplace.",
+    "Simplified fee collection and reporting.",
+    "Improved instructor productivity.",
+    "Delivered a scalable multi-tenant SaaS platform."
+  ],
+
+  timeline: [
+    {
+      phase: "Requirement Analysis",
+      time: "2 Weeks"
+    },
+    {
+      phase: "UI/UX Design",
+      time: "3 Weeks"
+    },
+    {
+      phase: "Frontend Development",
+      time: "5 Weeks"
+    },
+    {
+      phase: "Backend Development",
+      time: "6 Weeks"
+    },
+    {
+      phase: "AI Integration",
+      time: "3 Weeks"
+    },
+    {
+      phase: "Testing & Deployment",
+      time: "2 Weeks"
+    }
+  ],
+
+  testimonial: {
+    quote:
+      "AVR LearnSuite transformed our institute by bringing admissions, courses, live classes, examinations, AI-powered learning, analytics, and administration into one seamless platform. It has significantly improved operational efficiency and student engagement.",
+    author: "Maria Garcia",
+    role: "Institute Administrator",
+    company: "AVR LearnSuite"
+  },
+
+  liveProjectUrl: "https://avr-learnsuite.vercel.app/auth/login"
+},
+{
+  slug: "doctorpatavr",
+
+  title: "DoctorPatAVR",
+
+  subtitle: "AI Powered Hospital Management System & Healthcare ERP",
+
+  description:
+    "DoctorPatAVR is a comprehensive AI-powered Hospital Management System (HMS) and Healthcare ERP designed for hospitals, multi-specialty clinics, diagnostic centers, and healthcare networks. The platform centralizes patient management, doctor scheduling, appointments, EMR, laboratory, pharmacy, billing, finance, HR, analytics, and AI-powered healthcare automation into one enterprise SaaS platform.",
+
+  heroImage: "/AVR-Doctor-App/doctorapp-3.png",
+
+  tags: [
+    "Artificial Intelligence",
+    "Hospital Management System",
+    "Healthcare ERP",
+    "Healthcare SaaS",
+    "EMR",
+    "Telemedicine",
+    "Clinic Management",
+    "AI Automation"
+  ],
+
+  launchDate: "2026-07-28",
+
+  duration: "6 Months",
+
+  teamSize: "8 Members",
+
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Laravel",
+    "Node.js",
+    "MySQL",
+    "OpenAI API",
+    "Chart.js",
+    "Socket.IO",
+    "AWS S3",
+    "Stripe"
+  ],
+
+  challenges: {
+    summary:
+      "Hospitals and clinics relied on multiple disconnected systems to manage patients, appointments, medical records, pharmacy, billing, laboratory reports, staff, and finance. Manual workflows increased operational cost and reduced patient experience.",
+
+    keyChallenges: [
+      "Manual patient registration",
+      "Appointment scheduling conflicts",
+      "Scattered medical records",
+      "Prescription management",
+      "Laboratory report tracking",
+      "Billing & payment reconciliation",
+      "Multi-branch hospital management",
+      "Lack of AI-powered healthcare automation"
+    ]
+  },
+
+  solution: {
+    summary:
+      "Developed an enterprise multi-tenant Hospital Management System that automates complete healthcare operations including patient lifecycle, appointments, EMR, prescriptions, diagnostics, billing, finance, reporting, and AI-assisted clinical workflows.",
+
+    keyFeatures: [
+      {
+        title: "AI Medical Assistant",
+        desc:
+          "AI assists doctors with medical summaries, diagnosis suggestions, treatment recommendations, prescription drafting, and patient interaction."
+      },
+      {
+        title: "Complete Hospital ERP",
+        desc:
+          "Manage patients, doctors, appointments, departments, pharmacy, laboratory, billing, HR, finance, and analytics from one dashboard."
+      },
+      {
+        title: "Electronic Medical Records",
+        desc:
+          "Centralized EMR with patient history, prescriptions, reports, vitals, and consultation records."
+      },
+      {
+        title: "Healthcare Analytics",
+        desc:
+          "Real-time dashboards for appointments, patient growth, hospital revenue, department performance, and operational KPIs."
+      }
+    ]
+  },
+
+  features: [
+    {
+      title: "Patient Management",
+      desc:
+        "Complete patient lifecycle from registration, profile management, appointments, treatments, and follow-ups."
+    },
+    {
+      title: "Doctor Management",
+      desc:
+        "Manage doctor profiles, departments, consultation fees, schedules, ratings, and availability."
+    },
+    {
+      title: "Department Management",
+      desc:
+        "Create and manage medical departments with doctors, appointments, and department performance."
+    },
+    {
+      title: "Appointment Booking",
+      desc:
+        "Book, reschedule, cancel, and manage appointments with intelligent slot management."
+    },
+    {
+      title: "Appointment Calendar",
+      desc:
+        "Interactive calendar for doctors, receptionists, and administrators."
+    },
+    {
+      title: "Electronic Medical Records (EMR)",
+      desc:
+        "Complete digital patient history including visits, diagnoses, prescriptions, lab reports, and documents."
+    },
+    {
+      title: "Digital Prescriptions",
+      desc:
+        "Generate digital prescriptions with medicine history and downloadable reports."
+    },
+    {
+      title: "Laboratory Management",
+      desc:
+        "Manage lab tests, reports, diagnostics, and patient test history."
+    },
+    {
+      title: "Pharmacy Inventory",
+      desc:
+        "Inventory management with medicine stock, expiry tracking, purchase, and dispensing."
+    },
+    {
+      title: "Billing & Invoices",
+      desc:
+        "Generate invoices, collect payments, manage insurance billing, refunds, and financial reports."
+    },
+    {
+      title: "Finance Management",
+      desc:
+        "Track hospital revenue, expenses, pending payments, and financial analytics."
+    },
+    {
+      title: "Staff Management",
+      desc:
+        "Manage nurses, receptionists, technicians, HR records, attendance, payroll, and permissions."
+    },
+    {
+      title: "Attendance & Payroll",
+      desc:
+        "Automated employee attendance with payroll processing."
+    },
+    {
+      title: "Reports & Analytics",
+      desc:
+        "Generate operational, financial, clinical, laboratory, pharmacy, and patient reports."
+    },
+    {
+      title: "Notifications",
+      desc:
+        "Appointment reminders, medicine reminders, billing alerts, and hospital announcements."
+    },
+    {
+      title: "Support Ticket System",
+      desc:
+        "Integrated support center for patients, staff, and hospital administrators."
+    },
+    {
+      title: "Hospital & Clinic Management",
+      desc:
+        "Manage multiple hospitals, branches, clinics, and healthcare facilities from a single platform."
+    },
+    {
+      title: "Subscription Management",
+      desc:
+        "Multi-tenant SaaS subscription plans for hospitals and clinics."
+    },
+    {
+      title: "Audit Logs",
+      desc:
+        "Complete activity logs for compliance and security auditing."
+    },
+    {
+      title: "Role Based Access",
+      desc:
+        "Separate dashboards for Super Admin, Hospital Admin, Doctor, Receptionist, Nurse, Patient, Pharmacist, and Lab Staff."
+    },
+    {
+      title: "AI Clinical Assistant",
+      desc:
+        "AI-powered patient summaries, diagnosis support, treatment suggestions, and prescription generation."
+    },
+    {
+      title: "AI Patient Assistant",
+      desc:
+        "Patients receive instant AI assistance for appointments, reports, prescriptions, and FAQs."
+    },
+    {
+      title: "Healthcare Analytics Dashboard",
+      desc:
+        "Real-time KPIs including patient growth, revenue, appointments, cancellations, and department performance."
+    },
+    {
+      title: "Responsive Enterprise SaaS",
+      desc:
+        "Fully responsive enterprise healthcare platform optimized for desktop, tablet, and mobile devices."
+    }
+  ],
+
+  galleryImages: [
+    {
+      src: "/AVR-Doctor-App/doctorapp-1.png",
+      alt: "Login Screen"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-2.png",
+      alt: "Super Admin Dashboard"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-3.png",
+      alt: "Patient Management"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-4.png",
+      alt: "Doctor Management"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-5.png",
+      alt: "Department Management"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-6.png",
+      alt: "Appointment Booking"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-7.png",
+      alt: "Appointment Calendar"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-8.png",
+      alt: "Prescription Management"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-9.png",
+      alt: "Electronic Medical Records"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-10.png",
+      alt: "Reports & Analytics"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-11.png",
+      alt: "Hospital Management"
+    },
+    {
+      src: "/AVR-Doctor-App/doctorapp-12.png",
+      alt: "Hospital Management"
+    }
+  ],
+
+  statistics: [
+    {
+      value: "100,000+",
+      label: "Patients Managed"
+    },
+    {
+      value: "2,500+",
+      label: "Doctors"
+    },
+    {
+      value: "500+",
+      label: "Hospitals & Clinics"
+    },
+    {
+      value: "99.99%",
+      label: "Platform Uptime"
+    }
+  ],
+
+  performanceMetrics: [
+    {
+      value: "96%",
+      label: "Workflow Automation"
+    },
+    {
+      value: "<1 Sec",
+      label: "Dashboard Load Time"
+    },
+    {
+      value: "55%",
+      label: "Reduced Administrative Work"
+    },
+    {
+      value: "AI Powered",
+      label: "Clinical Assistance"
+    }
+  ],
+
+  results: [
+    "Centralized complete hospital operations.",
+    "Reduced appointment scheduling conflicts.",
+    "Digitized Electronic Medical Records.",
+    "Automated prescriptions and laboratory workflow.",
+    "Improved patient experience with AI assistance.",
+    "Real-time healthcare analytics.",
+    "Simplified billing and financial reporting.",
+    "Enabled multi-hospital SaaS management.",
+    "Improved doctor and staff productivity.",
+    "Delivered an enterprise-scale Healthcare ERP."
+  ],
+
+  timeline: [
+    {
+      phase: "Requirement Analysis",
+      time: "2 Weeks"
+    },
+    {
+      phase: "UI/UX Design",
+      time: "3 Weeks"
+    },
+    {
+      phase: "Frontend Development",
+      time: "6 Weeks"
+    },
+    {
+      phase: "Backend Development",
+      time: "7 Weeks"
+    },
+    {
+      phase: "AI Integration",
+      time: "3 Weeks"
+    },
+    {
+      phase: "Testing & Deployment",
+      time: "3 Weeks"
+    }
+  ],
+
+  testimonial: {
+    quote:
+      "DoctorPatAVR transformed our hospital operations by bringing patient management, appointments, EMR, billing, laboratory, pharmacy, finance, analytics, and AI-powered healthcare into one unified platform. The system significantly improved operational efficiency and patient satisfaction.",
+    author: "Dr. Alex Morgan",
+    role: "Hospital Administrator",
+    company: "DoctorPatAVR"
+  },
+
+  liveProjectUrl: "https://avr-docpat.vercel.app/login"
+},
+{
+  "slug": "avr-erp",
+  "title": "AVR ERP",
+  "subtitle": "AI Powered Enterprise Resource Planning SaaS",
+  "description": "AVR ERP is a multi-tenant AI-powered ERP platform that centralizes CRM, HR, Payroll, Inventory, Sales, Purchase, Finance, Projects, Reporting and AI automation into one enterprise platform.",
+  "heroImage": "/AVRERP/erp2.png",
+  "tags": [
+    "AI",
+    "ERP",
+    "CRM",
+    "HRMS",
+    "Inventory",
+    "Finance",
+    "SaaS"
+  ],
+  "launchDate": "2026-08-01",
+  "duration": "6 Months",
+  "teamSize": "8 Members",
+  "technologies": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Laravel",
+    "Node.js",
+    "MySQL",
+    "Tailwind CSS",
+    "OpenAI API",
+    "Chart.js"
+  ],
+  "challenges": {
+    "summary": "Businesses used disconnected software for sales, inventory, HR and finance.",
+    "keyChallenges": [
+      "Lead Management",
+      "Inventory Control",
+      "Payroll",
+      "Finance Reporting",
+      "Multi Company",
+      "Role Permissions",
+      "Manual Approval Workflow",
+      "Lack of AI Insights"
+    ]
+  },
+  "solution": {
+    "summary": "Developed an AI-powered multi-tenant ERP with centralized operations.",
+    "keyFeatures": [
+      {
+        "title": "AI Copilot",
+        "desc": "Natural language business assistant."
+      },
+      {
+        "title": "CRM",
+        "desc": "Lead, customer and sales management."
+      },
+      {
+        "title": "Inventory",
+        "desc": "Stock, warehouse and procurement."
+      },
+      {
+        "title": "Finance",
+        "desc": "Invoices, expenses and reporting."
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Dashboard",
+      "desc": "Business KPIs and analytics."
+    },
+    {
+      "title": "Company Management",
+      "desc": "Multi-company SaaS."
+    },
+    {
+      "title": "Subscription Management",
+      "desc": "Plans and billing."
+    },
+    {
+      "title": "User & Role Management",
+      "desc": "RBAC."
+    },
+    {
+      "title": "CRM",
+      "desc": "Lead and opportunity management."
+    },
+    {
+      "title": "Sales",
+      "desc": "Quotation, orders, invoices."
+    },
+    {
+      "title": "Purchase",
+      "desc": "Vendor and PO management."
+    },
+    {
+      "title": "Inventory",
+      "desc": "Products, warehouses, stock."
+    },
+    {
+      "title": "HR & Payroll",
+      "desc": "Employees, attendance, payroll."
+    },
+    {
+      "title": "Projects",
+      "desc": "Tasks and milestones."
+    },
+    {
+      "title": "Finance",
+      "desc": "Expenses, income, reports."
+    },
+    {
+      "title": "Reports",
+      "desc": "Business intelligence dashboards."
+    },
+    {
+      "title": "Audit Logs",
+      "desc": "Track every activity."
+    },
+    {
+      "title": "Notifications",
+      "desc": "Alerts and reminders."
+    },
+    {
+      "title": "AI Insights",
+      "desc": "Forecasts and recommendations."
+    }
+  ],
+  "galleryImages": [
+    {
+      "src": "/AVRERP/erp1.png",
+      "alt": "Login"
+    },
+    {
+      "src": "/AVRERP/erp2.png",
+      "alt": "Dashboard"
+    },
+    {
+      "src": "/AVRERP/erp3.png",
+      "alt": "Companies"
+    },
+    {
+      "src": "/AVRERP/erp4.png",
+      "alt": "HR"
+    },
+    {
+      "src": "/AVRERP/erp5.png",
+      "alt": "Inventory"
+    },
+    {
+      "src": "/AVRERP/erp6.png",
+      "alt": "HR"
+    },
+    {
+      "src": "/AVRERP/erp7.png",
+      "alt": "Inventory"
+    },
+    {
+      "src": "/AVRERP/erp8.png",
+      "alt": "HR"
+    },
+    {
+      "src": "/AVRERP/erp9.png",
+      "alt": "Inventory"
+    },
+    {
+      "src": "/AVRERP/erp10.png",
+      "alt": "HR"
+    },
+    {
+      "src": "/AVRERP/erp11.png",
+      "alt": "Inventory"
+    }
+  ],
+  "statistics": [
+    {
+      "value": "500+",
+      "label": "Companies"
+    },
+    {
+      "value": "50K+",
+      "label": "Users"
+    },
+    {
+      "value": "99.9%",
+      "label": "Uptime"
+    },
+    {
+      "value": "AI",
+      "label": "Automation"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "value": "95%",
+      "label": "Automation"
+    },
+    {
+      "value": "<1 Sec",
+      "label": "Dashboard"
+    },
+    {
+      "value": "60%",
+      "label": "Time Saved"
+    },
+    {
+      "value": "24/7",
+      "label": "Availability"
+    }
+  ],
+  "results": [
+    "Centralized business operations",
+    "Reduced manual work",
+    "Improved reporting",
+    "AI-powered decision making"
+  ],
+  "timeline": [
+    {
+      "phase": "Planning",
+      "time": "2 Weeks"
+    },
+    {
+      "phase": "Design",
+      "time": "3 Weeks"
+    },
+    {
+      "phase": "Development",
+      "time": "8 Weeks"
+    },
+    {
+      "phase": "Testing",
+      "time": "3 Weeks"
+    },
+    {
+      "phase": "Deployment",
+      "time": "2 Weeks"
+    }
+  ],
+  "testimonial": {
+    "quote": "AVR ERP unified our complete business operations and significantly improved productivity.",
+    "author": "John Smith",
+    "role": "Operations Director",
+    "company": "Enterprise Client"
+  },
+  "liveProjectUrl": "https://avr-erp-rosy.vercel.app/login"
+},
+  {
     slug: "cumbopay",
     title: "CumboPay",
     subtitle: "Bitcoin Lightning Payment Gateway & Gaming Wallet Platform",

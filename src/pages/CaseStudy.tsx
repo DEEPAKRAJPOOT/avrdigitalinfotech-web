@@ -417,72 +417,76 @@ const CaseStudy = () => {
         <DialogContent className="max-w-4xl w-full bg-[#0c120e] border border-white/10 p-0 overflow-hidden">
           <DialogTitle className="sr-only">Gallery Viewer</DialogTitle>
           
-          <div className="relative bg-black/50 flex items-center justify-center min-h-[500px]">
+          <div className="relative flex min-h-[70vh] items-center justify-center overflow-hidden bg-black/60 sm:min-h-[75vh] md:min-h-[80vh]">
             {/* Close Button */}
             <button
               onClick={() => setIsGalleryOpen(false)}
-              className="absolute top-4 right-4 z-50 p-2 hover:bg-white/10 rounded-lg transition-colors"
+              className="absolute top-4 right-4 z-50 rounded-lg p-2 transition-colors hover:bg-white/10"
             >
-              <X className="w-6 h-6 text-white" />
+              <X className="h-6 w-6 text-white" />
             </button>
 
             {/* Main Gallery View */}
             {project?.galleryImages && project.galleryImages.length > 0 && (
               <>
-                <div className="flex items-center justify-center w-full p-8">
-                  {renderGalleryMedia(
-                    project.galleryImages[currentGalleryIndex].src,
-                    project.galleryImages[currentGalleryIndex].alt,
-                    'w-full h-[400px] max-w-full rounded-lg',
-                    false
-                  )}
+                <div className="flex h-[75vh] w-full max-w-[1200px] items-center justify-center overflow-hidden px-4 py-4 sm:h-[80vh] sm:px-6 sm:py-6 md:px-8 md:py-8">
+                  <div className="flex h-full w-full items-center justify-center rounded-2xl bg-black/40 p-2 sm:p-4">
+                    {renderGalleryMedia(
+                      project.galleryImages[currentGalleryIndex].src,
+                      project.galleryImages[currentGalleryIndex].alt,
+                      'h-auto max-h-full w-auto max-w-full rounded-lg object-contain object-center',
+                      false
+                    )}
+                  </div>
                 </div>
 
                 {/* Navigation Controls */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 flex items-center justify-between">
+                <div className="pointer-events-none absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2 sm:px-4">
                   <button
                     onClick={handlePrevImage}
-                    className="p-2 hover:bg-white/10 rounded-lg transition-colors group"
+                    className="pointer-events-auto rounded-lg p-2 transition-colors group hover:bg-white/10"
                   >
-                    <ChevronLeft className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+                    <ChevronLeft className="h-6 w-6 text-white transition-transform group-hover:scale-110" />
                   </button>
-
-                  <span className="text-white text-sm font-medium">
-                    {currentGalleryIndex + 1} / {project.galleryImages.length}
-                  </span>
 
                   <button
                     onClick={handleNextImage}
-                    className="p-2 hover:bg-white/10 rounded-lg transition-colors group"
+                    className="pointer-events-auto rounded-lg p-2 transition-colors group hover:bg-white/10"
                   >
-                    <ChevronRight className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+                    <ChevronRight className="h-6 w-6 text-white transition-transform group-hover:scale-110" />
                   </button>
                 </div>
 
                 {/* Thumbnail Strip */}
-                <div className="absolute bottom-20 left-0 right-0 flex justify-center gap-2 px-6 overflow-x-auto pb-2">
-                  {project.galleryImages.map((img, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setCurrentGalleryIndex(idx)}
-                      className={`shrink-0 w-16 h-16 rounded-lg border-2 transition-all overflow-hidden ${
-                        idx === currentGalleryIndex
-                          ? 'border-primary scale-105'
-                          : 'border-white/20 hover:border-white/40'
-                      }`}
-                    >
-                      {isCloudinaryEmbed(img.src) ? (
-                        <div className="w-full h-full bg-black flex items-center justify-center text-[10px] text-white text-center px-1">
-                          Cloudinary video
-                        </div>
-                      ) : renderGalleryMedia(
-                          img.src,
-                          img.alt,
-                          'w-full h-full object-cover',
-                          true
-                        )}
-                    </button>
-                  ))}
+                <div className="absolute bottom-4 left-0 right-0 flex flex-col items-center gap-3 px-4 sm:bottom-6">
+                  <span className="rounded-full bg-black/70 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
+                    {currentGalleryIndex + 1} / {project.galleryImages.length}
+                  </span>
+
+                  <div className="flex w-full max-w-[min(100%,840px)] justify-center gap-2 overflow-x-auto scroll-smooth pb-1">
+                    {project.galleryImages.map((img, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setCurrentGalleryIndex(idx)}
+                        className={`h-16 w-16 shrink-0 overflow-hidden rounded-lg border-2 transition-all duration-200 sm:h-20 sm:w-20 ${
+                          idx === currentGalleryIndex
+                            ? 'scale-105 border-orange-400 shadow-[0_0_0_1px_rgba(249,115,22,0.35)]'
+                            : 'border-white/20 hover:border-white/40'
+                        }`}
+                      >
+                        {isCloudinaryEmbed(img.src) ? (
+                          <div className="flex h-full w-full items-center justify-center bg-black px-1 text-center text-[10px] text-white">
+                            Cloudinary video
+                          </div>
+                        ) : renderGalleryMedia(
+                            img.src,
+                            img.alt,
+                            'h-full w-full object-cover',
+                            true
+                          )}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </>
             )}
